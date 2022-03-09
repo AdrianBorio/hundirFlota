@@ -1,12 +1,22 @@
 
+
 <div class="container">
   <div class="row">
     <div class="col-6">
-      Columna de 6 de tamaño
+      <div class="table1">
+        <div class="columna" *ngFor="let celda of columnas">
+          <div class="celda" *ngFor="let celda of filas">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-6 " >
-      Columna de 6 de tamaño 
+    <div class="col-6">
+      <div class="table2">
+        <div class="columna" *ngFor="let celda of columnas">
+          <div class="celda" *ngFor="let celda of filas">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-

@@ -1,0 +1,7 @@
+.celda {
+  border: 1px solid;
+  position: relative;
+  float: left;
+  height: 4rem;
+  width: 14.285%
+}

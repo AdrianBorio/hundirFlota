@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hunirFlota';
+
+
+  filas = new Array(7).fill(null);
+  columnas = new Array(7).fill(null);
+
+  title = 'hundirFlota';
 }
