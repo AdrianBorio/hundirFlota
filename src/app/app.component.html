@@ -1,22 +1,21 @@
-
-
 <div class="container">
   <div class="row">
     <div class="col-6">
       <div class="table1">
-        <div class="columna" *ngFor="let celda of columnas">
-          <div class="celda" *ngFor="let celda of filas">
+        <div class="columna" *ngFor="let celda of columnas; let y = index;">
+          <div class="celda" *ngFor="let celda of filas; let x = index;" (click)="clickCelda(x,y)">
           </div>
         </div>
       </div>
     </div>
     <div class="col-6">
       <div class="table2">
-        <div class="columna" *ngFor="let celda of columnas">
-          <div class="celda" *ngFor="let celda of filas">
+        <div class="columna" *ngFor="let celda of columnas; let y = index;">
+          <div class="celda" *ngFor="let celda of filas; let x = index;" (click)="clickCelda(x,y)">
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<hr>
