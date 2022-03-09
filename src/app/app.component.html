@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-6">
-      <div class="table1">
+      <div class="barcos">
         <div class="columna" *ngFor="let celda of columnas; let y = index;">
           <div class="celda" *ngFor="let celda of filas; let x = index;" (click)="clickCelda(x,y)">
           </div>
@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="col-6">
-      <div class="table2">
+      <div class="atacar">
         <div class="columna" *ngFor="let celda of columnas; let y = index;">
           <div class="celda" *ngFor="let celda of filas; let x = index;" (click)="clickCelda(x,y)">
           </div>
@@ -19,3 +19,23 @@
   </div>
 </div>
 <hr>
+<div class="container2">
+  <div class="row">
+    <div class="col-6">
+      <div class="barcos">
+        <div class="columna" *ngFor="let celda of columnas; let y = index;">
+          <div class="celda" *ngFor="let celda of filas; let x = index;" (click)="clickCelda(x,y)">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="atacar">
+        <div class="columna" *ngFor="let celda of columnas; let y = index;">
+          <div class="celda" *ngFor="let celda of filas; let x = index;" (click)="clickCelda(x,y)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
